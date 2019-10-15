@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Gems",
+  "description": "gems list",
+  "type":"array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name",
+      "preciousness",
+      "origin",
+      "visual",
+      "value"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "The Id Schema",
+        "minimum": 1.0
+      },
+      "name": {
+        "type": "string",
+        "description": "The Name Schema",
+        "pattern": "^(.*)$"
+      },
+      "preciousness": {
+        "type": "string",
+        "description": "The Preciousness Schema",
+        "pattern": "PRECIOUS|SEMIPRECIOUS"
+      },
+      "origin": {
+        "type": "string",
+        "description": "The Origin Schema",
+        "pattern": "^(.*)$"
+      },
+      "visual": {
+        "type": "object",
+        "description": "The Visual Schema",
+        "required": [
+          "color",
+          "transparency",
+          "engraving"
+        ],
+        "properties": {
+          "color": {
+            "type": "string",
+            "description": "The Color Schema",
+            "pattern": "^(.*)$"
+          },
+          "transparency": {
+            "type": "number",
+            "description": "The Transparency Schema",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "engraving": {
+            "type": "integer",
+            "description": "The Engraving Schema",
+            "minimum": 4,
+            "maximum": 15
+          }
+        }
+      },
+      "value": {
+        "type":"number",
+        "description": "The Value Schema",
+        "minimum": 0
+      }
+    }
+  }
+}

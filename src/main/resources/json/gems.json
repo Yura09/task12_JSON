@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "diamond",
+    "preciousness": "PRECIOUS",
+    "origin": "USA",
+    "visual": {
+      "color": "white",
+      "transparency": 70,
+      "engraving": 9
+    },
+    "value": 2
+  },
+  {
+    "id": 2,
+    "name": "ruby",
+    "preciousness": "SEMIPRECIOUS",
+    "origin": "Poland",
+    "visual": {
+      "color": "red",
+      "transparency": 40,
+      "engraving": 14
+    },
+    "value": 3
+  },
+  {
+    "id": 3,
+    "name": "sapphire",
+    "preciousness": "PRECIOUS",
+    "origin": "Ukraine",
+    "visual": {
+      "color": "blue",
+      "transparency": 60,
+      "engraving": 9
+    },
+    "value": 4
+  }
+]
